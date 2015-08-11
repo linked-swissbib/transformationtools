@@ -1,6 +1,6 @@
 #target directories
 ntextract/target
-ntripples2jsonld/target
+ntriples2jsonld/target
 sparqlrequest/target
 unloadtripplestore/target
 
