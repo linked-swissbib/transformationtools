@@ -3,4 +3,6 @@ ntextract/target
 ntriples2jsonld/target
 sparqlrequest/target
 unloadtripplestore/target
+#ignore IntelliJ module files
+*.iml
 
