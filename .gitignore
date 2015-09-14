@@ -2,7 +2,7 @@
 ntextract/target
 ntriples2jsonld/target
 sparqlrequest/target
-unloadtripplestore/target
+unloadtriplestore/target
 splitfile/target
 rdfstats/target
 
