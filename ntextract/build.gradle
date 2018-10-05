@@ -1,0 +1,25 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '4.0.1'
+    id 'java'
+    id 'maven'
+}
+
+group = 'org.gesis'
+version = '1.0-SNAPSHOT'
+
+description = """"""
+
+jar {
+    manifest {
+        attributes "Main-Class": "org.gesis.ntextract.App"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.openrdf.sesame', name: 'sesame-rio-ntriples', version:'2.8.2'
+    compile group: 'org.openrdf.sesame', name: 'sesame-rio-api', version:'2.8.2'
+}
