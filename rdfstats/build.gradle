@@ -1,0 +1,28 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '4.0.1'
+    id 'java'
+    id 'maven'
+}
+
+group = 'org.gesis'
+version = '1.0-SNAPSHOT'
+
+description = """"""
+
+jar {
+    manifest {
+        attributes "Main-Class": "org.gesis.rdfstats.App"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.openrdf.sesame', name: 'sesame-repository-sparql', version:'2.8.2'
+    compile group: 'org.openrdf.sesame', name: 'sesame-runtime', version:'2.8.2'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version:'2.3'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version:'2.3'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version:'1.7.12'
+}

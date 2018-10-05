@@ -8,4 +8,8 @@ rdfstats/target
 
 #ignore IntelliJ module files
 *.iml
+.idea/
 
+*/build/*
+gradle/
+.gradle/
